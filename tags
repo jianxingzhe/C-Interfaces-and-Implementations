@@ -1,0 +1,189 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOC	mem.h	12;"	d
+ATOM_INCLUDE	atom.h	2;"	d
+Arith_ceiling	arith.c	/^int Arith_ceiling(int x,int y){$/;"	f
+Arith_div	arith.c	/^int Arith_div(int x,int y){$/;"	f
+Arith_floor	arith.c	/^int Arith_floor(int x,int y){$/;"	f
+Arith_max	arith.c	/^int Arith_max(int x,int y){$/;"	f
+Arith_min	arith.c	/^int Arith_min(int x,int y){$/;"	f
+Arith_mod	arith.c	/^int Arith_mod(int x,int y){$/;"	f
+Assert_Failed	memchk.c	/^const Except_T Assert_Failed = {"Assert Failed"};$/;"	v
+Atom_int	atom.c	/^const char *Atom_int(long n){$/;"	f
+Atom_length	atom.c	/^int Atom_length(const char *str){$/;"	f
+Atom_new	atom.c	/^const char *Atom_new(const char *str, int len){$/;"	f
+Atom_string	atom.c	/^const char *Atom_string(const char *str){$/;"	f
+CALLOC	mem.h	13;"	d
+CC	Makefile	/^CC?=		gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS?=	-Wall -ggdb -W -O$/;"	m
+ELSE	except.h	48;"	d
+END_TRY	except.h	59;"	d
+EXCEPT	except.h	43;"	d
+EXCEPT_INCLUDE	except.h	2;"	d
+Except_Frame	except.h	/^struct Except_Frame$/;"	s
+Except_Frame	except.h	/^typedef struct Except_Frame Except_Frame;$/;"	t	typeref:struct:Except_Frame
+Except_entered	except.h	/^	Except_entered=0,Except_raised,$/;"	e	enum:__anon1
+Except_finalized	except.h	/^	Except_handled,Except_finalized$/;"	e	enum:__anon1
+Except_handled	except.h	/^	Except_handled,Except_finalized$/;"	e	enum:__anon1
+Except_raise	except.c	/^void Except_raise(const T *e, const char *file, int line){$/;"	f
+Except_raised	except.h	/^	Except_entered=0,Except_raised,$/;"	e	enum:__anon1
+Except_stack	except.c	/^Except_Frame *Except_stack = NULL;$/;"	v
+FINALLY	except.h	53;"	d
+FREE	mem.h	14;"	d
+LIST_INCLUDE	list.h	2;"	d
+List_append	list.c	/^T List_append(T list, T tail){$/;"	f
+List_copy	list.c	/^T List_copy(T list){$/;"	f
+List_free	list.c	/^void List_free(T *list){$/;"	f
+List_length	list.c	/^int List_length(T list){$/;"	f
+List_list	list.c	/^T List_list(void *x, ...){$/;"	f
+List_map	list.c	/^void List_map(T list, void apply(void **x,void *cl), void *cl){ \/\/ apply 是闭包函数$/;"	f
+List_pop	list.c	/^T List_pop(T list,void **x){$/;"	f
+List_push	list.c	/^T List_push(T list,void *x){$/;"	f
+List_toArray	list.c	/^void **List_toArray(T list, void *end){$/;"	f
+MEM_INCLUDE	mem.h	2;"	d
+Mem_Failed	mem.c	/^const Except_T Mem_Failed = {"Allocation Failed"};$/;"	v
+Mem_Failed	memchk.c	/^const Except_T Mem_Failed = {"Allocation Failed"};$/;"	v
+Mem_alloc	mem.c	/^void *Mem_alloc(long nbytes, const char *file, int line){$/;"	f
+Mem_alloc	memchk.c	/^void *Mem_alloc(long nbytes, const char *file, int line){$/;"	f
+Mem_calloc	mem.c	/^void *Mem_calloc(long count, long nbytes, const char *file, int line){$/;"	f
+Mem_calloc	memchk.c	/^void *Mem_calloc(long count, long nbytes , const char *file, int line){$/;"	f
+Mem_free	mem.c	/^void Mem_free(void *ptr, const char *file, int line){$/;"	f
+Mem_free	memchk.c	/^void Mem_free(void *ptr, const char *file, int line){$/;"	f
+Mem_resize	mem.c	/^void *Mem_resize(void *ptr, long nbytes, const char *file, int line){$/;"	f
+Mem_resize	memchk.c	/^void *Mem_resize(void *ptr, long nbytes, const char *file, int line){$/;"	f
+NALLOC	memchk.c	12;"	d	file:
+NDESCRIPTORS	memchk.c	10;"	d	file:
+NELEMS	atom.c	7;"	d	file:
+NEW	mem.h	17;"	d
+NEW0	mem.h	18;"	d
+RAISE	except.h	31;"	d
+RERAISE	except.h	32;"	d
+RESIZE	mem.h	15;"	d
+RETURN	except.h	33;"	d
+SET_INCLUDE	set.h	2;"	d
+Set_diff	set.c	/^T Set_diff(T s, T t){$/;"	f
+Set_free	set.c	/^void Set_free(T *set){$/;"	f
+Set_inter	set.c	/^T Set_inter(T s, T t){$/;"	f
+Set_length	set.c	/^int Set_length(T set){$/;"	f
+Set_map	set.c	/^void Set_map(T set, void apply(const void *member, void *cl),void *cl){$/;"	f
+Set_member	set.c	/^int Set_member(T set, const void *member){$/;"	f
+Set_minus	set.c	/^T Set_minus(T s, T t){$/;"	f
+Set_new	set.c	/^T Set_new(int hint, $/;"	f
+Set_put	set.c	/^void Set_put(T set, const void *member){$/;"	f
+Set_remove	set.c	/^void *Set_remove(T set, const void *member){$/;"	f
+Set_toArray	set.c	/^void **Set_toArray(T set, void *end){$/;"	f
+Set_union	set.c	/^T Set_union(T s, T t){$/;"	f
+T	except.c	5;"	d	file:
+T	except.h	/^typedef struct  T$/;"	s
+T	except.h	/^}T;$/;"	t	typeref:struct:T
+T	except.h	5;"	d
+T	except.h	64;"	d
+T	list.c	7;"	d	file:
+T	list.h	/^struct T{$/;"	s
+T	list.h	/^typedef struct T *T;$/;"	t	typeref:struct:T
+T	list.h	23;"	d
+T	list.h	4;"	d
+T	set.c	/^struct T{$/;"	s	file:
+T	set.c	8;"	d	file:
+T	set.h	/^typedef struct T *T;$/;"	t	typeref:struct:T
+T	set.h	20;"	d
+T	set.h	4;"	d
+T	table.c	/^struct T {$/;"	s	file:
+T	table.c	7;"	d	file:
+T	table.h	/^typedef struct T *T;$/;"	t	typeref:struct:T
+T	table.h	29;"	d
+T	table.h	3;"	d
+TABLE_INCLUDE	table.h	2;"	d
+TRY	except.h	35;"	d
+Table_free	table.c	/^void Table_free(T *table){$/;"	f
+Table_get	table.c	/^void *Table_get(T table, const void *key){$/;"	f
+Table_length	table.c	/^int Table_length(T table){\/\/length表示binding 实例的数目$/;"	f
+Table_map	table.c	/^void Table_map(T table, void apply(const void *key, void **value, void *cl), void *cl){$/;"	f
+Table_new	table.c	/^T Table_new(int hint, int cmp(const void *x,const void *y),unsigned hash(const void *key)){$/;"	f
+Table_put	table.c	/^void *Table_put(T table, const void *key, void *value){$/;"	f
+Table_remove	table.c	/^void *Table_remove(T table,const void *key){$/;"	f
+Table_toArray	table.c	/^void **Table_toArray(T table, void *end){$/;"	f
+align	memchk.c	/^union align$/;"	u	file:
+atom	atom.c	/^static struct atom{$/;"	s	file:
+binding	table.c	/^	struct binding {$/;"	s	struct:T	file:
+buckets	atom.c	/^}*buckets[2048];$/;"	v	typeref:struct:atom	file:
+buckets	set.c	/^	} **buckets;$/;"	m	struct:T	typeref:struct:T::member	file:
+buckets	table.c	/^	} **buckets;$/;"	m	struct:T	typeref:struct:T::binding	file:
+cmp	set.c	/^	int(*cmp)(const void *x, const void *y);$/;"	m	struct:T	file:
+cmp	table.c	/^	int (*cmp)(const void *x,const void *y);$/;"	m	struct:T	file:
+cmpatom	set.c	/^static int cmpatom(const void *x, const void *y){$/;"	f	file:
+cmpatom	table.c	/^static int cmpatom(const void *x, const void *y){$/;"	f	file:
+cmpint	xref.c	/^int cmpint(const void *x, const void *y){$/;"	f
+compare	wf.c	/^int compare(const void *x ,const void *y){$/;"	f
+compare	xref.c	/^int compare(const void *x,const void *y){$/;"	f
+copy	set.c	/^static T copy(T t, int hint){$/;"	f	file:
+d	memchk.c	/^	double d;$/;"	m	union:align	file:
+dalloc	memchk.c	/^static struct descriptor *dalloc(void *ptr, long size, const char *file ,int line)$/;"	f	file:
+descriptor	memchk.c	/^static struct descriptor$/;"	s	file:
+env	except.h	/^	jmp_buf env;$/;"	m	struct:Except_Frame
+exception	except.h	/^	const T *exception;$/;"	m	struct:Except_Frame
+f	memchk.c	/^	float f;$/;"	m	union:align	file:
+file	except.h	/^	const char *file;$/;"	m	struct:Except_Frame
+file	memchk.c	/^	const char *file;$/;"	m	struct:descriptor	file:
+find	memchk.c	/^static struct descriptor *find(const void *ptr){$/;"	f	file:
+first	wf.c	/^int first(int c){$/;"	f
+first	xref.c	/^int first(int c){$/;"	f
+fp	memchk.c	/^	void (*fp)(void);$/;"	m	union:align	file:
+free	memchk.c	/^	struct descriptor *free;$/;"	m	struct:descriptor	typeref:struct:descriptor::descriptor	file:
+freelist	memchk.c	/^static struct descriptor freelist = {&freelist}; $/;"	v	typeref:struct:descriptor	file:
+getword	wf.c	/^int  getword(FILE *fp, char *buf, int size, int first(int c),int rest(int c)){$/;"	f
+getword	xref.c	/^int  getword(FILE *fp, char *buf, int size, int first(int c),int rest(int c)){$/;"	f
+hash	memchk.c	11;"	d	file:
+hash	set.c	/^	unsigned (*hash)(const void *x);$/;"	m	struct:T	file:
+hash	table.c	/^	unsigned (*hash)(const void *key);$/;"	m	struct:T	file:
+hashatom	set.c	/^static unsigned hashatom(const void *x){$/;"	f	file:
+hashatom	table.c	/^static unsigned hashatom(const void *key){$/;"	f	file:
+htab	memchk.c	/^} *htab[2048];$/;"	v	typeref:struct:descriptor	file:
+i	memchk.c	/^	int i;$/;"	m	union:align	file:
+intcmp	xref.c	/^int intcmp(const void *x,const void *y){$/;"	f
+inthash	xref.c	/^unsigned inthash(const void *x){$/;"	f
+key	table.c	/^	    const void *key;$/;"	m	struct:T::binding	file:
+l	memchk.c	/^	long l;$/;"	m	union:align	file:
+ld	memchk.c	/^	long double ld;$/;"	m	union:align	file:
+len	atom.c	/^	int len;$/;"	m	struct:atom	file:
+length	set.c	/^	int length;$/;"	m	struct:T	file:
+length	table.c	/^	int length;$/;"	m	struct:T	file:
+line	except.h	/^	int line;$/;"	m	struct:Except_Frame
+line	memchk.c	/^	int line;$/;"	m	struct:descriptor	file:
+linenum	xref.c	/^int linenum;$/;"	v
+link	atom.c	/^	struct atom *link;$/;"	m	struct:atom	typeref:struct:atom::atom	file:
+link	memchk.c	/^	struct descriptor *link;$/;"	m	struct:descriptor	typeref:struct:descriptor::descriptor	file:
+link	set.c	/^		struct member *link;$/;"	m	struct:T::member	typeref:struct:T::member::member	file:
+link	table.c	/^		struct binding	*link;$/;"	m	struct:T::binding	typeref:struct:T::binding::binding	file:
+list_reverse	list.c	/^T list_reverse(T list){$/;"	f
+lp	memchk.c	/^	long *lp;$/;"	m	union:align	file:
+main	rand.c	/^int main(){$/;"	f
+main	wf.c	/^int main(int argc, char *argv[]){$/;"	f
+main	xref.c	/^int main(int argc, char *argv[]){$/;"	f
+member	set.c	/^		const void *member;$/;"	m	struct:T::member	file:
+member	set.c	/^	struct member{$/;"	s	struct:T	file:
+object	Makefile	/^object=	xref.o mem.o atom.o except.o table.o set.o arith.o$/;"	m
+p	memchk.c	/^	void *p;$/;"	m	union:align	file:
+prev	except.h	/^	Except_Frame *prev;$/;"	m	struct:Except_Frame
+print	xref.c	/^void print(Table_T files){$/;"	f
+ptr	memchk.c	/^	const void *ptr;$/;"	m	struct:descriptor	file:
+reason	except.h	/^	const char *reason;$/;"	m	struct:T
+rest	list.h	/^	T rest;$/;"	m	struct:T
+rest	wf.c	/^int rest(int c){$/;"	f
+rest	xref.c	/^int rest(int c){$/;"	f
+scatter	atom.c	/^static unsigned long scatter[] = {$/;"	v	file:
+size	memchk.c	/^	long size;$/;"	m	struct:descriptor	file:
+size	set.c	/^	int size;$/;"	m	struct:T	file:
+size	table.c	/^	int size;$/;"	m	struct:T	file:
+std	memchk.c	/^using namespace std;$/;"	v
+str	atom.c	/^	char *str;$/;"	m	struct:atom	file:
+timestamp	set.c	/^	unsigned timestamp;$/;"	m	struct:T	file:
+timestamp	table.c	/^	unsigned timestamp;$/;"	m	struct:T	file:
+value	table.c	/^		void *value;$/;"	m	struct:T::binding	file:
+vfree	wf.c	/^void vfree(const void *key, void **count,void *cl){$/;"	f
+wf	wf.c	/^void wf(char *name, FILE *fp){$/;"	f
+xref	xref.c	/^void xref(const char *name, FILE *fp, Table_T identifiers){$/;"	f
